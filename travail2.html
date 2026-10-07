@@ -3,11 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Ege Kilinc — Portfolio BTS SIO SISR</title>
-<meta name="description" content="Portfolio de Ege Kilinc, étudiant en BTS SIO option SISR (administration systèmes et réseaux). Parcours, compétences, projets et contact.">
+<title>Prénom Nom — Portfolio BTS SIO SISR</title>
+<meta name="description" content="Portfolio de Prénom Nom, étudiant en BTS SIO option SISR (administration systèmes et réseaux). Parcours, compétences, projets et contact.">
+
+<!-- Open Graph / prévisualisation réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Prénom Nom — Portfolio BTS SIO SISR">
+<meta property="og:description" content="Étudiant en informatique, systèmes et réseaux — BTS SIO option SISR. Découvrez mon parcours, mes compétences et mes projets.">
+<!-- Remplace par l'URL complète de ton image une fois le site en ligne, ex: https://tonpseudo.github.io/preview.jpg -->
+<meta property="og:image" content="preview.jpg">
+<meta property="og:url" content="https://tonpseudo.github.io/">
+
+<!-- Empêche les moteurs de recherche d'indexer cette page -->
 <meta name="robots" content="noindex, nofollow">
+
+<!-- Sécurité : limite les sources de scripts/styles/images autorisées -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self';">
+<!-- Sécurité : n'envoie pas l'URL complète (avec paramètres) aux sites vers lesquels tu pointes -->
 <meta name="referrer" content="strict-origin-when-cross-origin">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Prénom Nom — Portfolio BTS SIO SISR">
+<meta name="twitter:description" content="Étudiant en informatique, systèmes et réseaux — BTS SIO option SISR.">
+<meta name="twitter:image" content="preview.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -75,6 +93,7 @@
     letter-spacing: 0.02em;
   }
 
+  /* ---- Nav ---- */
   nav {
     position: sticky;
     top: 0;
@@ -148,7 +167,7 @@
 
   section { max-width: 1100px; margin: 0 auto; padding: 6rem 1.5rem; }
 
-  /* ----  Profil ---- */
+  /* ---- Hero / Profil ---- */
   #accueil {
     display: flex;
     flex-direction: column;
@@ -276,6 +295,7 @@
     margin: 0;
   }
 
+  /* ---- Hero : texte à gauche / photo ronde à droite ---- */
   .hero-flex {
     display: flex;
     align-items: center;
@@ -487,7 +507,7 @@
     font-size: 0.96rem;
   }
 
-  /* ---- Parcours ---- */
+  /* ---- Parcours (timeline) ---- */
   .timeline {
     position: relative;
     margin-top: 3rem;
@@ -656,6 +676,7 @@
   }
   #contact .links a:hover { border-color: var(--accent); color: var(--accent); }
 
+  /* ---- Contact : infos à gauche / formulaire à droite ---- */
   .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -746,7 +767,7 @@
 </head>
 <body>
 
-<!-- Navigation -->
+
 <nav>
   <div class="nav-inner">
     <div class="brand"><span class="led"></span> Portfolio BTS SIO SISR</div>
@@ -760,29 +781,32 @@
   </div>
 </nav>
 
-<!-- Accueil -->
 <section id="accueil">
   <div class="hero-flex">
     <div class="hero-text">
       <div class="tag">Disponible pour effectuer un stage</div>
       <p class="role">Étudiant en informatique, systèmes et réseaux</p>
+      <!-- Remplace par ton vrai nom -->
       <h1>Ege<br>Kilinc</h1>
       <div class="cursus">1re année BTS SIO — option SISR</div>
 
       <div class="accueil-actions">
         <a class="btn btn-ghost" href="#projets">Voir les projets</a>
+        <!-- Remplace href="#" par le chemin de ton PDF, ex: "cv-prenom-nom.pdf" -->
         <a class="btn btn-ghost" href="https://egekc.github.io/portfolio/cv-egekilinc.pdf" target="_blank" rel="noopener noreferrer">Voir mon CV</a>
       </div>
     </div>
 
-    <!-- Photo à mettre -->
     <div class="hero-photo">
+      <!--
+        Quand tu as ta photo, remplace ce bloc <span> par :
+        <img src="ta-photo.jpg" alt="Ta photo">
+      -->
       <span class="hero-photo-label"></span>
     </div>
   </div>
 </section>
 
-<!-- Profil -->
 <section id="profil" class="reveal">
   <div class="sec-head">
     <span class="idx">01</span>
@@ -806,7 +830,6 @@
   </div>
 </section>
 
-<!-- Parcours -->
 <section id="parcours" class="reveal">
   <div class="sec-head">
     <span class="idx">02</span>
@@ -827,7 +850,6 @@
   </div>
 </section>
 
-<!-- Compétences -->
 <section id="skills" class="reveal">
   <div class="sec-head">
     <span class="idx">03</span>
@@ -906,7 +928,6 @@
   </div>
 </section>
 
-<!-- Projets -->
 <section id="projets" class="reveal">
   <div class="sec-head">
     <span class="idx">04</span>
@@ -926,7 +947,6 @@
   </div>
 </section>
 
-<!-- Contact -->
 <section id="contact" class="reveal">
   <div class="sec-head">
     <span class="idx">05</span>
@@ -937,16 +957,19 @@
     <div class="contact-info">
       <p class="contact-intro">Disponible pour un stage dans le cadre de mon BTS. N'hésitez pas à me contacter.</p>
       <ul class="contact-list">
+        <!-- Remplace le texte de chaque ligne par tes informations -->
         <li><span class="ci-icon" aria-hidden="true">📍</span><span>Paris, Île-de-France</span></li>
         <li><span class="ci-icon" aria-hidden="true">📱</span><a href="tel:+33634920599">06 34 92 05 99</a></li>
         <li><span class="ci-icon" aria-hidden="true">✉</span><a href="mailto:ege.klnc0@gmail.com">ege.klnc0@gmail.com</a></li>
       </ul>
 
       <div class="contact-socials">
+        <!-- ► COLLE TON LIEN GITHUB entre les guillemets de href="" -->
         <a class="social-box" href="https://github.com/egekc" target="_blank" rel="noopener">
           <span class="social-name">GitHub</span>
           <span class="social-arrow" aria-hidden="true">↗</span>
         </a>
+        <!-- ► COLLE TON LIEN LINKEDIN entre les guillemets de href="" -->
         <a class="social-box" href="https://www.linkedin.com/in/ege-kilinc-b81925441" target="_blank" rel="noopener">
           <span class="social-name">LinkedIn</span>
           <span class="social-arrow" aria-hidden="true">↗</span>
@@ -955,6 +978,7 @@
     </div>
 
   <form id="contactForm" class="contact-form" novalidate>
+    <!-- Champ piège anti-spam : invisible pour un humain, souvent rempli par les robots -->
     <div class="hp-field" aria-hidden="true">
       <label for="website">Ne pas remplir ce champ</label>
       <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
@@ -989,6 +1013,7 @@
 </footer>
 
 <script>
+  // Validation du formulaire de contact + anti-spam (honeypot + délai minimum)
   const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');
   const formLoadedAt = Date.now();
@@ -1027,10 +1052,14 @@
       document.getElementById('cf-message'),
     ];
     const allValid = fields.map(validateField).every(Boolean);
+
+    // Anti-spam : champ piège rempli = probablement un robot
     const honeypot = document.getElementById('website').value;
+    // Anti-spam : formulaire envoyé en moins de 3 secondes = probablement un robot
     const tooFast = Date.now() - formLoadedAt < 3000;
 
     if (honeypot || tooFast) {
+      // On fait comme si ça avait marché, sans rien envoyer, pour ne pas aider le robot à s'ajuster
       status.textContent = 'Message envoyé, merci !';
       form.reset();
       return;
@@ -1038,6 +1067,8 @@
 
     if (!allValid) return;
 
+    // Pas de backend sur un site statique GitHub Pages : on ouvre le client mail avec les infos pré-remplies.
+    // Pour un vrai envoi silencieux, il faudra un service comme Formspree ou EmailJS.
     const name = fields[0].value;
     const email = fields[1].value;
     const message = fields[2].value;
